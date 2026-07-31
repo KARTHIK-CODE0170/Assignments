@@ -1,5 +1,3 @@
-from os import stat
-from typing import Type
 class Employee:
     #class variables
     total_employees = 0
