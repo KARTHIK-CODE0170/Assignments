@@ -1,0 +1,15 @@
+# VS Code settings
+.vscode/
+
+# Python caching
+__pycache__/
+*.pyc
+
+# Local script files to ignore (keeps explorer clean)
+assingment1.py
+new.py
+submit_.py
+trail.py
+
+# Local directory to ignore
+ip/
