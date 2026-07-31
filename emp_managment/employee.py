@@ -1,4 +1,3 @@
-#Hello guys
 class Employee:
     #class variables
     total_employees = 0
