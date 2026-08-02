@@ -33,10 +33,7 @@ class BankAccount:
     
     @balance.setter
     def balance(self,val):
-        try:
-            raise AttributeError("Blocked (write balance): property 'balance' of 'BankAccount' object has no setter")
-        except Exception as e:
-            print(e)
+        raise AttributeError("Blocked (write balance): property 'balance' of 'BankAccount' object has no setter")
 
     @property
     def account_type(self):
@@ -45,16 +42,6 @@ class BankAccount:
     @staticmethod
     def next_account_number():
         print(BankAccount._next_account_number)
-    
-    @property
-    def account(self):
-        return self.__balance
-    @account.setter
-    def account(self,amount):
-        try:
-            raise AttributeError("Blocked (write balance): property 'balance' of 'BankAccount' object has no setter")
-        except AttributeError as e:
-            print(e)
 
     @property
     def account_number(self):
@@ -105,7 +92,7 @@ class BankAccount:
     
     @staticmethod
     def is_valid_amount(amount):
-        return True if amount > 0 else False
+        return amount > 0
 
     
 

@@ -9,7 +9,7 @@ def main():
     print("Deposit 2000 ->",b1.deposit(2000))
     print("Withdraw 1500 ->",b1.withdraw(1500,1234))
     print("Intrest added ->",b1.add_annual_interest())
-    print("Balance now : ",b1.account)
+    print("Balance now : ",b1.balance)
     b1.change_pin(1234,1235)
     b1.withdraw(123,4)
     b1.withdraw(555555,1235)
